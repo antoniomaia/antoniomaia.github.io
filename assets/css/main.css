@@ -11,7 +11,7 @@ html, body {
 }
 
 .inner {
-    margin: 40px 20px;
+    margin: 20px;
 }
 
 .square {
@@ -47,8 +47,7 @@ html, body {
 }
 
 .hero {
-    padding: 100px 75px;
-    text-align: left;
+    padding: 50px 8px;
 }
 
 .hero h2 {
@@ -108,3 +107,11 @@ html, body {
     transition: all .2s linear;
     -webkit-transition: all .2s linear;
 }
+
+
+@media screen and (min-width: 900px) {
+    .hero {
+        padding: 100px 75px;
+    }
+  }
+  
