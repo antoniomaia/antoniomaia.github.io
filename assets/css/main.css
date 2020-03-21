@@ -79,25 +79,25 @@ header {
     max-width: 505px;
 }
 
-.wavy {
+.light {
     background: linear-gradient(
             to right,
             #FF9800 0%,
             #FF9800 5px,
-            transparent 5px
+            rgba(255, 255, 255, 0) 5px
     ) repeat-x;
     background-size: 100%;
     padding-left: 10px;
     text-decoration: none;
 }
 
-.wavy:hover {
+.light:hover {
     background:
          linear-gradient(
            to right,
            #FF9800 0%,
            #FF9800 5px,
-           transparent
+           rgba(255, 255, 255, 0)
          );
 }
 
