@@ -20,15 +20,21 @@ html, body {
     Ubuntu, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     color: var(--primary-color);
     background-color: var(--bg-color);
+    transition: all .2s linear;
+    -webkit-transition: all .2s ease-in-out;
+}
+
+body {
+    max-width: 50rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5rem;
+    padding-right: 1.5rem;
 }
 
 header {
     display: flex;
     justify-content: space-between;
-}
-
-.inner {
-    margin: 20px;
 }
 
 .square {
@@ -63,18 +69,18 @@ header {
     pointer-events: none;
 }
 
-.hero {
+.content {
     padding: 50px 8px;
 }
 
-.hero h2 {
+.content h2 {
     font-size: 40px;
     line-height: 1.2;
 }
 
-.hero p {
+.content p {
     font-size: 18px;
-    padding-top: 20px;
+    padding-top: 24px;
     line-height: 1.8;
     max-width: 505px;
 }
@@ -102,36 +108,19 @@ header {
 }
 
 .address {
-    margin-top: 44px;
+    line-height: 1.5;
 }
 
 .address a {
-    border: 1px solid #FF9800;
-    border-radius: 4px;
-    padding: 15px 40px;
     text-decoration: none;
     color: #FF9800;
-    text-transform: uppercase;
-    font-style: normal;
-    letter-spacing: 2px;
-    font-size: 14px;
 }
 
 .address a:hover {
-    background-color: #FF9800;
-    color: white;
+    text-decoration: underline;
     transition: all .2s linear;
     -webkit-transition: all .2s linear;
 }
-
-
-@media screen and (min-width: 900px) {
-    .hero {
-        padding: 100px 75px;
-    }
-  }
-  
-
 
 /* toggle switch */
 .sun {
@@ -168,6 +157,7 @@ header {
     right: 0;
     top: 0;
     transition: .4s;
+    -webkit-transition: .4s;
 }
   
 .slider:before {
@@ -195,4 +185,14 @@ input:checked + .slider:before {
   
 .slider.round:before {
     border-radius: 50%;
+}
+
+footer {
+    text-align: center;
+}
+
+@media screen and (min-width: 900px) {
+    .content {
+        padding: 100px 75px;
+    }
 }
